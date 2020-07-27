@@ -1,0 +1,19 @@
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Set the default handler.
+DirectoryIndex index.php index.html index.htm
+
+RewriteEngine on 
+RewriteBase /
+
+
+RewriteRule ^inicio(|/)$ ./index.php
+RewriteRule ^link1(|/)$ ./link1.php
+RewriteRule ^link2(|/)$ ./link2.php
+RewriteRule ^link3(|/)$ ./link3.php
+RewriteRule ^link4(|/)$ ./link4.php
+RewriteRule ^link5(|/)$ ./link5.php
